@@ -1,31 +1,31 @@
 # DLL Sample GreenCube ( IO-117 )
-﻿
-namespace _53106
-
-public class _53106
-{
-	public static (string output, string logOutput) ReceiveDataFormat(byte[] data)
-	{
-		// Tuple構成用出力変数の定義
-		string output = string.Empty;
-		string logOutput = string.Empty;
-
-		// Telemetryの処理
-		if ((data[6] == 0x76) && (data[7] == 0x1a) || (data[6] == 0x36) && (data[7] == 0x12))
-		{
-			// KISS逆変換されたデータ（DLLの戻り値）
-			output = kissRevConversionString;
-		}
-
-		// Message Data の処理
-		if ((data[6] == 0x1d) && (data[7] == 0x03))
-		{
-
-			// DLLの戻り値
-			logOutput = outputString;
-		}
-   
-		/* Tupleを返す */ 
-		return (output, logOutput);
-	}
-}
+﻿<br>
+namespace _53106<br>
+<br>
+public class _53106<br>
+{<br>
+	public static (string output, string logOutput) ReceiveDataFormat(byte[] data)<br>
+	{<br>
+		// Tuple構成用出力変数の定義<br>
+		string output = string.Empty;<br>
+		string logOutput = string.Empty;<br>
+<br>
+		// Telemetryの処理<br>
+		if ((data[6] == 0x76) && (data[7] == 0x1a) || (data[6] == 0x36) && (data[7] == 0x12))<br>
+		{<br>
+			// KISS逆変換されたデータ（DLLの戻り値）<br>
+			output = kissRevConversionString;<br>
+		}<br>
+<br>
+		// Message Data の処理<br>
+		if ((data[6] == 0x1d) && (data[7] == 0x03))<br>
+		{<br>
+<br>
+			// DLLの戻り値<br>
+			logOutput = outputString;<br>
+		}<br>
+   <br>
+		// Tupleを返す <br>
+		return (output, logOutput);<br>
+	}<br>
+}<br>
