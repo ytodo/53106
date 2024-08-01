@@ -18,16 +18,18 @@ public class _53106
             output = kissRevConversionString;
         }
 
-        // Message Data の処理                                デジピータの無い衛星では不要
+        //---------------------------------------------- デジピータの無い衛星では不要
+        // Message Data の処理 
         if ((data[6] == 0x1d) && (data[7] == 0x03))
         {
 
             // DLLの戻り値
             logOutput = outputString;
         }
-
+        //-------------------------------------------------------------------------
+    
         // Tupleを返す
-        return (output, logOutput);
+        return (output, logOutput);        // 但し logOutput はそのまま返す
     }
 }
 </pre>
