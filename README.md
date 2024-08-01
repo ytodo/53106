@@ -17,7 +17,7 @@ public class _53106<br>
             output = kissRevConversionString;<br>
         }<br>
 <br>
-        // Message Data の処理<br>     <span style="color:red;">デジピータの無い衛星では不要</span>
+        // Message Data の処理     <span style="color:red;">デジピータの無い衛星では不要</span>
         if ((data[6] == 0x1d) && (data[7] == 0x03))<br>
         {<br>
 <br>
