@@ -1,6 +1,6 @@
 # DLL Sample GreenCube ( IO-117 )
 
-<pre>
+<pre\>
 namespace _53106
 
 public class _53106
