@@ -32,4 +32,7 @@ public class _53106
         return (output, logOutput);        // 但し logOutput はそのまま返す
     }
 }
+
+ローカルリポジトリーの中で、<b>dotnet publish -r win-x64 --self-confained falese</b> とすると
+<b>53106\bin\Release\net8.0-windows\win-x64\publish\</b> に 53106.dll が生成されます。
 </pre>
