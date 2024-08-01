@@ -34,5 +34,6 @@ public class _53106
 }
 
 ローカルリポジトリーの中で、<b>dotnet publish -r win-x64 --self-confained falese</b> とすると
-<b>53106\bin\Release\net8.0-windows\win-x64\publish\</b> に 53106.dll が生成されます。
+<b>53106\bin\Release\net8.0-windows\win-x64\publish\</b> に 53106.dll が生成されます。これを
+TLMForwarder のルートディレクトリーにあるフォルダ <b>dll</b> に入れて使用します。
 </pre>
