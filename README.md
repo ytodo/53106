@@ -5,14 +5,14 @@ namespace _53106<br>
 public class _53106<br>
 {<br>
 　　　public static (string output, string logOutput) ReceiveDataFormat(byte[] data)<br>
-{<br>
+　　　{<br>
 　　　　　　// Tuple構成用出力変数の定義<br>
 　　　　　　string output = string.Empty;<br>
 　　　　　　string logOutput = string.Empty;<br>
 <br>
 　　　　　　// Telemetryの処理<br>
 　　　　　　if ((data[6] == 0x76) && (data[7] == 0x1a) || (data[6] == 0x36) && (data[7] == 0x12))<br>
-{<br>
+　　　　　　{<br>
 　　　　　　　　　// KISS逆変換されたデータ（DLLの戻り値）<br>
 　　　　　　　　　output = kissRevConversionString;<br>
 　　　　　　}<br>
